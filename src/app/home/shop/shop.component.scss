@@ -1,0 +1,13 @@
+.container{
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

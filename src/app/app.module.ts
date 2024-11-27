@@ -9,7 +9,10 @@ import { ContactComponent } from './contact/contact.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { ShopComponent } from './home/shop/shop.component';
 import { CartComponent } from './home/cart/cart.component';
-
+import { MenComponent } from './home/shop/men/men.component';
+import { WomenComponent } from './home/shop/women/women.component';
+import { JwellaryComponent } from './home/shop/jwellary/jwellary.component';
+import { HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,11 +21,16 @@ import { CartComponent } from './home/cart/cart.component';
     ContactComponent,
     BreadcrumbComponent,
     ShopComponent,
-    CartComponent
+    CartComponent,
+    MenComponent,
+    WomenComponent,
+    JwellaryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

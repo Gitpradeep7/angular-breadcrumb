@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ['home','about','contact'];
+  constructor(){
+    console.log('helloo constructor');
+  }
+  ngOnInit(){
+    console.log('hello oninit')
+  }
 }

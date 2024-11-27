@@ -1,1 +1,8 @@
-<p>shop works!</p>
+
+<hr>
+<div class="container">
+    <ul>
+        <li *ngFor='let shop of shopTitle'><a [routerLink]="shop.url">{{shop.label}}</a></li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

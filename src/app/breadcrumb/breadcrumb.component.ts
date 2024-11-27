@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BreadcrumbService } from '../breadcrumb.service';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-breadcrumb',

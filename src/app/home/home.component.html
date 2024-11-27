@@ -1,4 +1,17 @@
-<p>home works!</p>
+<h3>home comp</h3>
 <ul>
-    <li *ngFor="let home of homeTitle"><a [routerLink]="home">{{home}}</a></li>
+    <li *ngFor="let home of homeTitle">
+        <a [routerLink]="home">{{home}}</a>
+    </li>
 </ul>
+<hr>
+<p>ng-template with *ngif directive
+</p>
+<button (click)="toggle()">toggle</button>
+<div class="line" *ngIf="istrue; else show" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente adipisci veritatis, dolor et ullam a ex mollitia aperiam provident optio.
+</div>
+<ng-template #show>
+    @@@@@@@@
+</ng-template>
+<router-outlet></router-outlet>

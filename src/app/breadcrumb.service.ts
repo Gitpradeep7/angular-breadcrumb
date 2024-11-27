@@ -18,7 +18,7 @@ export class BreadcrumbService {
   .subscribe((breadcrumbs)=>{
     this.breadcrumbsSubject.next(breadcrumbs);
   });
-  console.log('21 router',router)
+  console.log('21 routerrrr',router)
   console.log('22 routerevent',router.events)
    }
 
@@ -37,6 +37,7 @@ export class BreadcrumbService {
       console.log('-----------------------------------------------------')
       return this.buildBreadcrumbs(route.firstChild, nextPath, breadcrumbs)
     }
+    console.log('breadcrumbs',breadcrumbs)
     return breadcrumbs;
    }
 }
